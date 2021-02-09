@@ -377,8 +377,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\OriginalContact.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="_Archive\fonts\fontawesome-webfont.eot" />
     <Content Include="_Archive\fonts\fontawesome-webfont.ttf" />

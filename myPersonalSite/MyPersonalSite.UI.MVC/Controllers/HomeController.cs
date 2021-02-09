@@ -16,9 +16,9 @@ namespace MyPersonalSite.UI.MVC.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Resume()
         {
-            ViewBag.Message = "Your application description page.";
+            
 
             return View();
         }
