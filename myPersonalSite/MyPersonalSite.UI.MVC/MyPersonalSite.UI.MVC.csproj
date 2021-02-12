@@ -143,6 +143,13 @@
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Content\img\Favicon\about.txt" />
+    <Content Include="Content\img\Favicon\android-chrome-192x192.png" />
+    <Content Include="Content\img\Favicon\android-chrome-512x512.png" />
+    <Content Include="Content\img\Favicon\apple-touch-icon.png" />
+    <Content Include="Content\img\Favicon\favicon-16x16.png" />
+    <Content Include="Content\img\Favicon\favicon-32x32.png" />
+    <Content Include="Content\img\Favicon\favicon.ico" />
     <Content Include="Content\img\slider\4.jpg" />
     <Content Include="Content\img\bg\1.jpg" />
     <Content Include="Content\img\bg\2.jpg" />
@@ -356,6 +363,8 @@
     <Content Include="Content\fonts\Pe-icon-7-stroke.eot" />
     <Content Include="Content\fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="Content\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Content\PDF Resume.pdf" />
+    <Content Include="Content\img\Favicon\site.webmanifest" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

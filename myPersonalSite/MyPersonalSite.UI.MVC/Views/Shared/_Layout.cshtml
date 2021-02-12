@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@ViewBag.Title | Dylan Schwarz | Web Developer </title>
+    <title>Dylan Schwarz | Web Developer </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="~/Content/img/Favicon/favicon.ico">
     <!-- all css here -->
     <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
@@ -44,11 +45,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-sm-6 hidden-xs">
+                    @*<div class="col-md-6 col-sm-6 hidden-xs">
                         <div class="header-icon floatright">
                             <a href="#"><i class="fa fa-linkedin"></i></a>
                         </div>
-                    </div>
+                    </div>*@
                 </div>
             </div>
         </div>
@@ -60,21 +61,32 @@
                     <div class="col-md-9 col-sm-10">
                         <div class="main-menu floatright">
                             <nav>
-                                <ul>
+                                <ul class=" ">
 
                                     <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                                     <li><a href="@Url.Action("Resume", "Home")">Resume&#771;</a></li>
-                                    <li><a href="service.html">service</a></li>
                                     <li>
-                                        <a href="portfolio.html">Portfolio<i class="fa fa-angle-down"></i></a>
+                                        <a href="portfolio.html">Portfolio Projects<i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="portfolio-column-2.html">portfolio column 2</a></li>
-                                            <li><a href="portfolio-column-4.html">portfolio column 4</a></li>
-                                            <li><a href="portfolio-full.html">portfolio fullwidth</a></li>
+                                            <li><a href="portfolio-column-2.html">Front End Project</a></li>
+                                            <li><a href="portfolio-column-4.html">C# Game</a></li>
+                                            <li><a href="portfolio-full.html">Storefront</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio.html">Classmates<i class="fa fa-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="http://benslenker.com">Ben Slenker</a></li>
+                                            <li><a href="http://bryandoescode.com">Bryan R Clingan II</a></li>
+                                            <li><a href="http://davidmuolo.com">David Muolo</a></li>
+                                            <li><a href="http://dillonfisher.com">Dillon Fisher</a></li>
+                                            <li><a href="http://codingbyjames.com">James Glover</a></li>
+                                            <li><a href="http://jeremysidener.com">Jeremy Sidener</a></li>
+                                            <li><a href="http://rachelmantei.com">Rachel Mantei</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="team.html">team</a></li>
-                                    
+
                                     <li><a href="@Url.Action("Contact", "Home")">contact</a></li>
                                 </ul>
                             </nav>
