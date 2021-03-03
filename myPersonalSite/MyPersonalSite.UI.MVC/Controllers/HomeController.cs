@@ -30,6 +30,13 @@ namespace MyPersonalSite.UI.MVC.Controllers
             return View();
         }//end action result
 
+        public ActionResult Portfolio()
+        {
+
+
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Contact(ContactViewModel cvm)
@@ -85,6 +92,7 @@ namespace MyPersonalSite.UI.MVC.Controllers
             //If all goes well, we will return the user to a view that confirms their message has been sent.
             return View("EmailConfirmation", cvm);
 
+            
 
 
 

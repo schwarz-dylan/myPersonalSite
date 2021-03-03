@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="~/Content/css/meanmenu.css">
     <link rel="stylesheet" href="~/Content/css/style.css">
     <link rel="stylesheet" href="~/Content/css/responsive.css">
-    <script src="~/Content/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="~/Content/css/animate.css"/>
 
     @RenderSection("styles", required: false)
 
@@ -46,10 +46,10 @@
                         </ul>
                     </div>
                     @*<div class="col-md-6 col-sm-6 hidden-xs">
-                        <div class="header-icon floatright">
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>*@
+                            <div class="header-icon floatright">
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>*@
                 </div>
             </div>
         </div>
@@ -57,24 +57,24 @@
         <div class="main-menu-area">
             <div class="container">
                 <div class="row">
-                    
+
                     <div class="col-md-9 col-sm-10">
                         <div class="main-menu floatright">
                             <nav>
                                 <ul class=" ">
 
                                     <li><a href="@Url.Action("Index", "Home")">Home</a></li>
-                                    <li><a href="@Url.Action("Resume", "Home")">Resume&#771;</a></li>
                                     <li>
-                                        <a href="portfolio.html">Portfolio Projects<i class="fa fa-angle-down"></i></a>
+                                        <a href="@Url.Action("Portfolio", "Home")">Portfolio Projects<i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
                                             <li><a href="portfolio-column-2.html">Front End Project</a></li>
                                             <li><a href="portfolio-column-4.html">C# Game</a></li>
                                             <li><a href="portfolio-full.html">Storefront</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="@Url.Action("Resume", "Home")">Resume&#771;</a></li>
                                     <li>
-                                        <a href="portfolio.html">Classmates<i class="fa fa-angle-down"></i></a>
+                                        <a href="#">Classmates<i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
                                             <li><a href="http://benslenker.com">Ben Slenker</a></li>
                                             <li><a href="http://bryandoescode.com">Bryan R Clingan II</a></li>
@@ -85,7 +85,7 @@
                                             <li><a href="http://rachelmantei.com">Rachel Mantei</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="team.html">team</a></li>
+                                    @*<li><a href="team.html">team</a></li>*@
 
                                     <li><a href="@Url.Action("Contact", "Home")">contact</a></li>
                                 </ul>
@@ -124,7 +124,7 @@
                                     <li><p><strong><i class="fa fa-map-marker"></i> </strong> Kansas City Metro Area, Missouri</p></li>
                                     <li><p><strong><i class="fa fa-envelope"></i></strong> <a href="#">schwarz_dylan@yahoo.com</a></p></li>
                                     <li> <p><strong><i class="fa fa-phone"></i></strong> 816 808 6401</p></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -149,9 +149,6 @@
         </div>
     </footer>
     <!-- footer end -->
-
-    @RenderSection("scripts", required: false)
-
     <!-- all js here -->
     <script src="~/Content/js/vendor/jquery-1.12.0.min.js"></script>
     <script src="~/Content/js/bootstrap.min.js"></script>
@@ -163,5 +160,9 @@
     <script src="~/Content/js/waypoints.min.js"></script>
     <script src="~/Content/js/plugins.js"></script>
     <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>
