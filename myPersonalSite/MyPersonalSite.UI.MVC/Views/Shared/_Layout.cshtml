@@ -58,37 +58,40 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-9 col-sm-10">
+                    <div class="col-md-10 col-sm-10">
                         <div class="main-menu floatright">
-                            <nav>
-                                <ul class=" ">
+                            <nav class="navbar navbar-default navbar-fixed-top">
 
-                                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
-                                    <li>
-                                        <a href="@Url.Action("Portfolio", "Home")">Portfolio Projects<i class="fa fa-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a href="portfolio-column-2.html">Front End Project</a></li>
-                                            <li><a href="portfolio-column-4.html">C# Game</a></li>
-                                            <li><a href="portfolio-full.html">Storefront</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="@Url.Action("Resume", "Home")">Resume&#771;</a></li>
-                                    <li>
-                                        <a href="#">Classmates<i class="fa fa-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a href="http://benslenker.com">Ben Slenker</a></li>
-                                            <li><a href="http://bryandoescode.com">Bryan R Clingan II</a></li>
-                                            <li><a href="http://davidmuolo.com">David Muolo</a></li>
-                                            <li><a href="http://dillonfisher.com">Dillon Fisher</a></li>
-                                            <li><a href="http://codingbyjames.com">James Glover</a></li>
-                                            <li><a href="http://jeremysidener.com">Jeremy Sidener</a></li>
-                                            <li><a href="http://rachelmantei.com">Rachel Mantei</a></li>
-                                        </ul>
-                                    </li>
-                                    @*<li><a href="team.html">team</a></li>*@
+                                <div class="container-fluid">
+                                    <ul class="nav nav-pills">
 
-                                    <li><a href="@Url.Action("Contact", "Home")">contact</a></li>
-                                </ul>
+                                        <li role="presentation" class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                                        <li role="presentation">
+                                            <a href="@Url.Action("Portfolio", "Home")">Portfolio Projects<i class="fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="portfolio-column-2.html">Front End Project</a></li>
+                                                <li><a href="portfolio-column-4.html">C# Game</a></li>
+                                                <li><a href="portfolio-full.html">Storefront</a></li>
+                                            </ul>
+                                        </li>
+                                        <li role="presentation"><a href="@Url.Action("Resume", "Home")">Resume&#771;</a></li>
+                                        <li role="presentation">
+                                            <a href="#">Classmates<i class="fa fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="http://benslenker.com">Ben Slenker</a></li>
+                                                <li><a href="http://bryandoescode.com">Bryan R Clingan II</a></li>
+                                                <li><a href="http://davidmuolo.com">David Muolo</a></li>
+                                                <li><a href="http://dillonfisher.com">Dillon Fisher</a></li>
+                                                <li><a href="http://codingbyjames.com">James Glover</a></li>
+                                                <li><a href="http://jeremysidener.com">Jeremy Sidener</a></li>
+                                                <li><a href="http://rachelmantei.com">Rachel Mantei</a></li>
+                                            </ul>
+                                        </li>
+                                        @*<li><a href="team.html">team</a></li>*@
+
+                                        <li role="presentation"><a href="@Url.Action("Contact", "Home")">contact</a></li>
+                                    </ul>
+                                </div>
                             </nav>
                         </div>
                         <div class="mobile-menu-area"></div>
@@ -122,7 +125,7 @@
                             <div class="address">
                                 <ul class="list-unstyled contact">
                                     <li><p><strong><i class="fa fa-map-marker"></i> </strong> Kansas City Metro Area, Missouri</p></li>
-                                    <li><p><strong><i class="fa fa-envelope"></i></strong> <a href="#">schwarz_dylan@yahoo.com</a></p></li>
+                                    <li><p><strong><i class="fa fa-envelope"></i></strong> <a href="@Url.Action("Contact", "Home")">schwarz_dylan@yahoo.com</a></p></li>
                                     <li> <p><strong><i class="fa fa-phone"></i></strong> 816 808 6401</p></li>
 
                                 </ul>
@@ -137,8 +140,8 @@
             <div class="container">
                 <div class="social-icons text-center">
                     <label>Find Me On:</label>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dylan-schwarz-baa1b8181/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/schwarz-dylan"><i class="fa fa-github"></i></a>
                 </div>
                 <div class="copyright text-center">
                     <p>Smoth template - All rights reserved - &copy;Copyright @DateTime.Now.Year Made by ThemePure</p>

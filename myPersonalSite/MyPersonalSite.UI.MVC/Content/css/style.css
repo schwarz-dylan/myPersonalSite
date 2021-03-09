@@ -446,8 +446,13 @@ font-family: 'Open Sans', sans-serif;
 .logo {
   margin-top: 30px;
 }
-.main-menu{}
-.main-menu ul{}
+.main-menu{
+    
+
+}
+.main-menu ul{
+    margin-left:30%;
+}
 .main-menu ul li {
   display: inline-block;
   position:relative;
@@ -458,13 +463,13 @@ font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 20px;
-  padding: 30px 15px;
+  padding: 30px 15px 30px 15px;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
 }
 .main-menu ul li:last-child a{padding-right:0;} 
 .main-menu ul li:hover > a, .main-menu ul li.active > a {
-  color: #3452ff;
+  color: black;
 }
 .main-menu ul li a i {
   margin-left: 3px;
