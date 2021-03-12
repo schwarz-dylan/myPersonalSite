@@ -42,12 +42,20 @@ a:focus {
   border: medium none;
   outline: 0 none;
 }
-img {max-width:100%;height:auto}
-.fix {overflow:hidden}
+img {
+    /*max-width:100%;*/
+    height: 360px;
+    width: 360px;
+    
+}
+.fix {
+    overflow:hidden
+
+}
 p {margin:0 0 15px;}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
-  margin: 0 0 10px;
+  margin: 40px 20px 20px 20px;
 }
 h1 a,
 h2 a,
@@ -466,13 +474,21 @@ font-family: 'Open Sans', sans-serif;
   padding: 30px 15px 30px 15px;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
+  
 }
+.main-menu ul li a.active{
+    color:black;
+    }
+.navbar-nav li a.active {
+ background-color: #4682B4;
+    }
 .main-menu ul li:last-child a{padding-right:0;} 
 .main-menu ul li:hover > a, .main-menu ul li.active > a {
   color: black;
 }
 .main-menu ul li a i {
   margin-left: 3px;
+  
 }
 /* sub-menu */
 .main-menu ul li ul.submenu {
@@ -690,10 +706,12 @@ font-family: 'Open Sans', sans-serif;
   position: relative;
 }
 .portfolio-img{}
-.portfolio-img a {
-  display: block;
-  position: relative;
-}
+    .portfolio-img a {
+        display: block;
+        position: relative;
+        border:thick;
+    border-color: #4682B4;
+    }
 .portfolio-img a::before {
   background: #3452ff none repeat scroll 0 0;
   bottom: 0;
@@ -1422,5 +1440,11 @@ form#search button {
   font-weight: 600;
   font-size: 13px;
   margin-bottom: 0;
+
 }
+
+/*.single-portfolio mb-30 {
+    max-height:800px;
+    min-height:800px;
+}*/
 /* css end */
