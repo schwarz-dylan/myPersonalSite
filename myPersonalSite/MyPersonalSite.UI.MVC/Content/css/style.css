@@ -46,6 +46,8 @@ img {
     /*max-width:100%;*/
     height: 360px;
     width: 360px;
+    border:solid;
+    border-color:cadetblue;
     
 }
 .fix {
@@ -56,7 +58,12 @@ p {margin:0 0 15px;}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   margin: 40px 20px 20px 20px;
+  
 }
+.portfolioProjectHeader{
+    text-align:center;
+}
+
 h1 a,
 h2 a,
 h3 a,
@@ -494,13 +501,14 @@ font-family: 'Open Sans', sans-serif;
 .main-menu ul li ul.submenu {
   background: #fff none repeat scroll 0 0;
   opacity: 0;
-  position: absolute;
+  position:absolute;
   text-align: left;
   top: 120%;
   transition: all 0.3s ease 0s;
   visibility: hidden;
   width: 180px;
   z-index: 9999;
+  margin-left:0px;
 }
 .main-menu ul li.last-elements ul.submenu {
   right: 0;
@@ -591,15 +599,16 @@ font-family: 'Open Sans', sans-serif;
 .section-title {
   margin-bottom: 60px;
 }
-.section-title h2 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding-bottom: 20px;
-  position: relative;
-  text-transform: uppercase;
-  margin-bottom:20px;
-}
+    .section-title h2 {
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: -25px;
+    }
 .section-title.text-center > p {
   color: #555;
   font-size: 16px;
@@ -642,6 +651,7 @@ font-family: 'Open Sans', sans-serif;
   transform: translateX(-50%);
   width: 50px;
 }
+
 .What-wedo-text p {
   font-size: 14px;
   font-weight: 400;
